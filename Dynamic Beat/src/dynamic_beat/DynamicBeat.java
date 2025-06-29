@@ -504,6 +504,8 @@ public class DynamicBeat extends JFrame {
 		game = new Game(trackList.get(nowSelected).getTitleName(),difficuly, trackList.get(nowSelected).getGameMusic());
 		game.start(); //run function is activated; note drops
 		setFocusable(true); //for keyboard focus
+		requestFocusInWindow();
+		requestFocus();
 	}
 	
 	//Function to go back to the main screen

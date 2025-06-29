@@ -793,24 +793,26 @@ public class Game extends Thread {
 			combo = 0;
 		}
 		else if (judge.equals("Good")) {
-			judgeImage = new ImageIcon(Main.class.getResource("../images/judgeGood.png")).getImage();
-			score += 20;
-			combo += 1;
-		}
-		else if (judge.equals("Great")) {
-			judgeImage = new ImageIcon(Main.class.getResource("../images/judgeGreat.png")).getImage();
-			score += 50;
-			combo += 1;
-		}
+            judgeImage = new ImageIcon(Main.class.getResource("../images/judgeGood.png")).getImage();
+            combo += 1;
+            score += (20 + combo);
+        }
+        else if (judge.equals("Great")) {
+            judgeImage = new ImageIcon(Main.class.getResource("../images/judgeGreat.png")).getImage();
+            combo += 1;
+            score += (50 + combo);
+
+        }
 		else if (judge.equals("Perfect")) {
 			judgeImage = new ImageIcon(Main.class.getResource("../images/judgePerfect.png")).getImage();
-			score += 100;
+			score += (100 + combo);
 			combo += 1;
 		}
 		else if (judge.equals("Late")) {
 			judgeImage = new ImageIcon(Main.class.getResource("../images/judgeLate.png")).getImage();
 			score += 5;
 			combo = 0;
+		
 		}
 		
 	}

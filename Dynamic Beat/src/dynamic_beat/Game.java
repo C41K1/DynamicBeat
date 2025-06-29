@@ -291,18 +291,19 @@ public class Game extends Thread {
 			new Music("miss.mp3",false).start();
 		}
 		else if (judge.equals("Good")) {
-			judgeImage = new ImageIcon(Main.class.getResource("../images/judgeGood.png")).getImage();
-			score += 20;
-			combo += 1;
-		}
-		else if (judge.equals("Great")) {
-			judgeImage = new ImageIcon(Main.class.getResource("../images/judgeGreat.png")).getImage();
-			score += 50;
-			combo += 1;
-		}
+            judgeImage = new ImageIcon(Main.class.getResource("../images/judgeGood.png")).getImage();
+            combo += 1;
+            score += (20 + combo);
+        }
+        else if (judge.equals("Great")) {
+            judgeImage = new ImageIcon(Main.class.getResource("../images/judgeGreat.png")).getImage();
+            combo += 1;
+            score += (50 + combo);
+
+        }
 		else if (judge.equals("Perfect")) {
 			judgeImage = new ImageIcon(Main.class.getResource("../images/judgePerfect.gif")).getImage();
-			score += 100;
+			score += (100 + combo);
 			combo += 1;
 			new Music("ping.mp3",false).start();
 		}

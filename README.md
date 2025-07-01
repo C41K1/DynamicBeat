@@ -86,3 +86,10 @@ This game uses the **Javazoom** external library provided [here](http://www.java
 
 # What I learned 
 Overall, I think this project served its purpose well--from going through the tutorials and working on the game from the bottom up, I've learned lots of valuable skills not only in Java but also practical programming in general. I've came to really appreciate how Java classes work and interact with each other to form a final product, and how efficient this method of program organization can be. One of the most important things this project has taught me is problem solving skills and perseverence. Although the tutorials are very well made with detailed background information, there were many aspects of the code/setup that didn't really worked on my local machine, so I had to constantly go through troubleshooting/debugging/refactoring processes to get it working. I've learned to make use of google and Stack Overflow (Although I've used this website several times, it's my first time to post my own questions. Some of the posts I made for this project can be found [here](https://stackoverflow.com/questions/56013975/im-having-trouble-importing-javazoom-library-in-eclipse) and [here](https://stackoverflow.com/questions/56028383/java-menubar-hiding-background-image)), which is a valuable skill needed in my programming career. From this experience, I can say with confidence that it has taught me enough to continue learning Java programming and develop another GUI application on my own. 
+
+# Modificações
+* Ajuste na Estrutura de Pastas e isolamento da última versão
+* Melhoria Visual de Resposta de Acerto de Nota
+* Adição da Música Unity - TheFatRat
+* Corrigido Falhas ao iniciar o Jogo
+* Melhorado Sistema de Pontuação que agora leva combo em consideração
